@@ -30,6 +30,18 @@
 
           console.log(patient);
 
+          const identifiers = (patient.identifier || []).map(id => {
+            return {
+              system: id.system || "",
+              value: id.value || "",
+              use: id.use || "",
+              type: id.type?.coding?.[0]?.code || "",
+              assigner: id.assigner?.display || ""
+            };
+          });
+
+          console.log(identifiers);
+
           var fname = '';
           var lname = '';
 
