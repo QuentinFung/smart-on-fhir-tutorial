@@ -54,8 +54,6 @@
             $('#identifiers tbody').append(row);
           });
 
-          console.log(identifiers);
-
           var fname = '';
           var lname = '';
 
