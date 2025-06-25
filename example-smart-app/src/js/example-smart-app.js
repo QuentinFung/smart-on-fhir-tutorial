@@ -28,7 +28,7 @@
           var byCodes = smart.byCodes(obv, 'code');
           var gender = patient.gender;
 
-          console.log(patient.toString());
+          console.log(patient);
 
           var fname = '';
           var lname = '';
