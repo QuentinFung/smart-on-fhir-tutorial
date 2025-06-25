@@ -40,6 +40,19 @@
             };
           });
 
+          identifiers.forEach(function(id) {
+            const system = id.system || "";
+            const type = id.type?.coding?.[0]?.code || "";
+            const value = id.value || "";
+
+            const row = `<tr>
+              <td>${system}</td>
+              <td>${type}</td>
+              <td>${value}</td>
+            </tr>`;
+
+            $('#identifiers tbody').append(row);
+
           console.log(identifiers);
 
           var fname = '';
