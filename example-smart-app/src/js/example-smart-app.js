@@ -37,7 +37,7 @@
               system: id.system || "",
               value: id.value || "",
               use: id.use || "",
-              type: id.type?.coding?.[0]?.display || id.type?.coding?.[0]?.code || "",
+              type: id.type?.coding?.[0]?.display || id.type?.coding?.[0]?.code || id.type?.text || "",
               assigner: id.assigner?.display || ""
             };
           });
