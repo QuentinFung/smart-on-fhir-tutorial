@@ -42,7 +42,7 @@
 
           identifiers.forEach(function(id) {
             const system = id.system || "";
-            const type = id.type?.coding?.[0]?.code || "";
+            const type = id.type || "";
             const value = id.value || "";
 
             const row = `<tr>
